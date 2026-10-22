@@ -31,10 +31,10 @@
     "@nestjs/typeorm": "^12.0.2",
     "bcrypt": "^6.0.0",
     "dotenv": "^18.0.8",
-    "install": "^0.13.0",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
     "pg": "^8.23.1",
+    "redis": "^6.3.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "typeorm": "^1.1.2"

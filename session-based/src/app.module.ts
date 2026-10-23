@@ -6,10 +6,12 @@ import { DbModule } from './database/db.module.js';
 import { RedisModule } from './redis/redis.module.js';
 import { User } from './user/user.entity.js';
 import { UserModule } from './user/user.module.js';
+import { AuthModule } from './auth/auth.module.js';
 
 @Module({
   imports: [
     UserModule,
+    AuthModule,
     ConfigModule.forRoot({ isGlobal: true }),
     DbModule.forRoot({
       entities: [User]

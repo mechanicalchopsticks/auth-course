@@ -1,5 +1,12 @@
 {
 	"dependencies": {
-		"ioredis": "^6.0.0"
+		"connect-redis": "^10.0.0",
+		"express-session": "^1.19.0",
+		"ioredis": "^6.0.0",
+		"passport": "^0.7.0"
+	},
+	"devDependencies": {
+		"@types/express-session": "^1.19.0",
+		"@types/passport": "^1.0.17"
 	}
 }

@@ -18,6 +18,7 @@ async function bootstrap() {
   app.use(
     session({
       store,
+      name: '__Host-session',
       secret: process.env.SESSION_SECRET || 'keyboard cat',
       resave: false,
       saveUninitialized: false,
@@ -26,6 +27,7 @@ async function bootstrap() {
         secure: false, // false when not using HTTPS (true only for production)
         sameSite: 'lax', // Lax option helps with cross-site requests
         maxAge: 1000 * 60 * 60, // Set the cookie to expire in 1 hour
+        path: '/'
       },
     }),
   );

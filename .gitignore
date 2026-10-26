@@ -1,1 +1,3 @@
 /node_modules/*
+/.idea/
+/.pnpm-store/v11/index.db
